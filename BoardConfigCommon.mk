@@ -44,4 +44,4 @@ TARGET_USERIMAGES_USE_EXT4 := true
 BOARD_SEPOLICY_DIRS += build/target/board/generic_riscv64_ab/sepolicy
 
 #Set system property
-TARGET_SYSTEM_PROP += device/thead/thead_ice910/ice910/system.prop
+TARGET_SYSTEM_PROP += device/thead/thead_ice910/ice910dk/system.prop
