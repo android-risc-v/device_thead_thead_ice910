@@ -4,7 +4,8 @@ TARGET_PREBUILT_DTB := device/thead/thead_ice910/kernel/ice_evb_c910.dtb
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, device/thead/thead_ice910/ice910dk/device-ice910dk.mk)
 $(call inherit-product, device/thead/thead_ice910/device-common.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
+USE_OEM_TV_APP := true
+$(call inherit-product, device/google/atv/products/atv_base.mk)
 
 DEVICE_PACKAGE_OVERLAYS := device/thead/thead_ice910/overlay
 
@@ -23,3 +24,10 @@ PRODUCT_NAME := ice910dk
 PRODUCT_DEVICE := ice910dk
 PRODUCT_BRAND := Android
 PRODUCT_MODEL := AOSP on XuanTie910(RISCV64)
+
+PRODUCT_AAPT_PREF_CONFIG := tvdpi
+PRODUCT_CHARACTERISTICS := tv
+
+PRODUCT_PACKAGES += \
+    DeskClock \
+    RpLauncher

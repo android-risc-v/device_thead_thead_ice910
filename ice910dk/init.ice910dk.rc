@@ -5,5 +5,8 @@ on boot
 	insmod /vendor/lib64/modules/galcore.ko
 	chmod 666 /dev/galcore
 
+	setprop service.adb.tcp.port 5555
+	start adbd
+
 on fs
 	mount_all /vendor/etc/fstab.${ro.board.platform}

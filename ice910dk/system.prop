@@ -5,6 +5,6 @@ ro.serialno=1234567890
 ro.build.version.sdk=29
 ro.hardware=ice910
 
-ro.sf.lcd_density=320
+ro.sf.lcd_density=213
 persist.sys.strictmode.visual=0
 persist.sys.strictmode.disable=1

@@ -1,7 +1,7 @@
 PRODUCT_COPY_FILES +=   $(TARGET_PREBUILT_KERNEL):kernel \
                         $(TARGET_PREBUILT_DTB):thead-ice910.dtb
 
-PRODUCT_COPY_FILES +=  device/thead/thead_ice910/ice910dk/init.ice910dk.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.ice910dk.rc \
+PRODUCT_COPY_FILES +=   device/thead/thead_ice910/ice910dk/init.ice910dk.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.ice910dk.rc \
 			device/thead/thead_ice910/ice910dk/init.common.usb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.common.usb.rc \
 			frameworks/native/data/etc/android.hardware.usb.accessory.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.usb.accessory.xml \
 			device/thead/thead_ice910/ice910dk/fstab.ice910:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.ice910
@@ -41,6 +41,9 @@ PRODUCT_COPY_FILES += \
 # ethernet
 PRODUCT_COPY_FILES += \
 			frameworks/native/data/etc/android.hardware.ethernet.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.ethernet.xml
+
+PRODUCT_COPY_FILES += \
+			frameworks/base/data/sounds/effects/ogg/Effect_Tick_48k.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/Effect_Tick.ogg
 
 PRODUCT_PACKAGES += gralloc.ice910 \
 		    audio.primary.ice910 \
